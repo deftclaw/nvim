@@ -14,11 +14,11 @@ _2024-06-12_
 
 Simple and lightweight neovim config. Only add what I use:  
 planning on adding:  
-  - [x]codeMinimap  
-  - [x]easyAlign  
-  - [ ]goto definitions function  
-  - [ ]mason  
-  - [ ]telescope  
-  - [x]treesitter  
-  - [x]vim-plug  
-  - [ ]whatever this lua spacemapper is on the left-side  
+  - [x] codeMinimap  
+  - [x] easyAlign  
+  - [ ] goto definitions function  
+  - [ ] mason  
+  - [ ] telescope  
+  - [x] treesitter  
+  - [x] vim-plug  
+  - [ ] whatever this lua spacemapper is on the left-side  
