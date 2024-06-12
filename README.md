@@ -18,7 +18,7 @@ planning on adding:
   - [x] easyAlign  
   - [ ] goto definitions function  
   - [x] indent-blankline
-  - [ ] mason  
-  - [ ] telescope  
+  - [x] mason  
+  - [x] telescope  
   - [x] treesitter  
   - [x] vim-plug  
