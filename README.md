@@ -17,8 +17,8 @@ planning on adding:
   - [x] codeMinimap  
   - [x] easyAlign  
   - [ ] goto definitions function  
+  - [ ] indent-blankline
   - [ ] mason  
   - [ ] telescope  
   - [x] treesitter  
   - [x] vim-plug  
-  - [ ] whatever this lua spacemapper is on the left-side  
