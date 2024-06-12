@@ -17,7 +17,7 @@ planning on adding:
   - [x] codeMinimap  
   - [x] easyAlign  
   - [ ] goto definitions function  
-  - [ ] indent-blankline
+  - [x] indent-blankline
   - [ ] mason  
   - [ ] telescope  
   - [x] treesitter  
