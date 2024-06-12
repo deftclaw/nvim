@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Ensure ~/.local/bin is in the path
+[[ $PATH =~ $HOME/.local/bin ]] || export PATH=$PATH:$HOME/.local/bin
+
+# Create ~/.local directories for Neovim
+mkdir -vp ~/.local/{bin,etc/xdg/nvim,lib/nvim,share/nvim/site/{autoload,plugin}}
+
+# Install Neovim
+tar -xf nvim.tbz2 -C ~/.local ./bin
+tar -xf nvim.tbz2 -C ~/.local/etc/xdg/nvim ./config --strip-components=2
+tar -xf nvim.tbz2 -C ~/.local/lib/nvim ./parser
+tar -xf nvim.tbz2 -C ~/.local/share/nvim ./runtime
+tar -xf nvim.tbz2 -C ~/.local/share/nvim/site/autoload ./plug.vim
+
+export XDG_CONFIG_HOME=$HOME/.local/etc/xdg
