@@ -4,4 +4,4 @@
 . lib/spinner.sh
 
 [[ -f nvim.tbz2 ]] && mv -v nvim.tbz2 nvim.tbz2.bak
-spinner tar -cjvf nvim.tbz2 ./{bin,config,parser,plug.vim,runtime}
+spinner tar -cjvf nvim.tbz2 ./{bin,config,parser,plug.vim,runtime} --remove-files
