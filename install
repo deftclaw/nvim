@@ -10,10 +10,14 @@
 mkdir -vp ~/.local/{bin,etc/xdg/nvim,lib/nvim,share/nvim/site/{autoload,plugin}}
 
 # Install Neovim
-spinner tar -xf nvim.tbz2 -C ~/.local ./bin 
-spinner tar -xf nvim.tbz2 -C ~/.local/etc/xdg/nvim ./config --strip-components=2 
-spinner tar -xf nvim.tbz2 -C ~/.local/lib/nvim ./parser 
-spinner tar -xf nvim.tbz2 -C ~/.local/share/nvim ./runtime 
-spinner tar -xf nvim.tbz2 -C ~/.local/share/nvim/site/autoload ./plug.vim 
+if [[ $OSTYPE =~ 'darwin' ]]
+  then spinner tar -xf M1.tbz2 -C ~/.local bin
+elif [[ $OSTYPE =~ 'linux-gnu' ]]
+  then spinner tar -xf ELF.tbz2 -C ~/.local bin
+fi
+spinner tar -xf config.tbz2 -C ~/.local/etc/xdg/nvim ./config --strip-components=2 
+spinner tar -xf config.tbz2 -C ~/.local/lib/nvim ./parser 
+spinner tar -xf config.tbz2 -C ~/.local/share/nvim ./runtime 
+spinner tar -xf config.tbz2 -C ~/.local/share/nvim/site/autoload ./plug.vim 
 
 export XDG_CONFIG_HOME=$HOME/.local/etc/xdg
